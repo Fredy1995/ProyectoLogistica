@@ -1,0 +1,58 @@
+@media screen and (max-width: 1000px){
+	#abrir_Menu {
+		display: block;
+		margin:-35px 0px 0px 0px;
+	}
+	#menu {
+		position: fixed;
+		z-index: 3;
+		width: 260px;
+		height: 100%;
+		margin-top:0;
+		top:0;
+		background: #fff;
+		-webkit-box-shadow: 1px 1px 5px #000;
+		-moz-box-shadow: 1px 1px 5px #000;
+		right: -100%;
+		margin: auto;
+	}
+	#menu ul a{
+		display: block;
+	}
+	#menu hr{
+	visibility: visible;
+    }
+	#menu ul p{
+		position: absolute;
+	    top:10px;
+	    right: 100px;
+	}
+	#menu div{
+		display: block;
+	}
+	#salir{
+	margin: 0px 0%;
+   }
+	h4 {
+		color: #6e6e6e;
+		font: 15px Verdana;
+		text-align: center;
+	}
+	.fuenteTitle {
+		font-size: 10px;
+		font-weight: bolder;
+		text-align: center;
+	}
+
+	.fuenteDatos {
+		font-size: 10px;
+		font-weight: bolder;
+	}
+	.alinear{
+	 text-align:center;
+	}
+   .moverlogin{
+	   position:absolute;
+	   top:20px;
+   }
+}

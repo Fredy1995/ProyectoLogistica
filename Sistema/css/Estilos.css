@@ -1,0 +1,259 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	width: 100%;
+	height:50px;
+	background: #fff;
+	-webkit-box-shadow: 1px 1px 5px #000;
+	-moz-box-shadow: 1px 1px 5px #000;
+}
+#logo {
+	padding: 10px 0px 0px 10px;
+}
+#logo h3{
+color: #6e6e6e;
+font: bold 20px Verdana;
+}
+#abrir_Menu{
+ display: none;
+ float: right;
+ color: #6e6e6e;
+ font-size:40px;
+ margin-top: -50px;
+ padding-right:30px;
+ cursor: pointer;
+ opacity: .6;
+}
+#menu{
+	width: 1000px;
+	margin: -50px 25%;
+}
+#menu ul a{
+	
+	color:#6e6e6e;
+	font: 16px Verdana;
+	padding: 10px;
+	-webkit-transition: background .6s,color .6s;
+	-moz-transition: background .6s,color .6s;
+	-o-transition: background .6s,color .6s;
+
+}
+#salir{
+	margin: 0px 4%;
+
+}
+#menu ul a:hover{
+background:#6e6e6e;
+color:#f2f2f2;
+text-decoration: none;
+}
+#menu ul p{
+	color:#6e6e6e;
+	font: 16px Verdana;
+	padding: 10px;
+	position: absolute;
+	top:-10px;
+	right: 50px;
+
+}
+#menu hr{
+	visibility: hidden;
+}
+#menu div{
+	display: none;
+	height: 50px;
+}
+#cerrar_Menu {
+	float: right;
+	color: #6e6e6e;
+	font-size: 35px;
+	padding: 10px;
+	cursor: pointer;
+	opacity: .6;
+	position: absolute;
+	top: 10px;
+	left: 180px;
+}
+#cerrar_Menu:hover{
+	opacity: 1;
+}
+#abrir_Menu:hover{
+opacity: 1;
+}
+h4 {
+	color: #6e6e6e;
+	font:25px Verdana;
+	text-align: center;
+}
+.scrolling {
+	height: 250px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.BordeTitleTable{
+	padding:10px;
+	border-color:lightgrey;
+	border-radius:5px;
+	border-style:solid;
+	border-width:1px;
+}
+.fuenteTitle {
+	font-size: 14px;
+	font-weight: bolder;
+	text-align: center;
+}
+.fuenteDatos {
+	font-size: 12px;
+	font-weight: bolder;
+}
+.colorPP{
+	color:red;
+}
+.colorResultadosP {
+	color: red;
+	font-size: 12px;
+	font-weight: bolder;
+}
+.colorPR {
+	color: limegreen;
+}
+.colorResultados {
+	font-size: 12px;
+	font-weight: bolder;
+	color: mediumblue;
+}
+.colorResultadosP {
+	font-size: 12px;
+	font-weight: bolder;
+	color: #0080c0;
+}
+.SizeFontTitleG {
+	font-size: 24px;
+}
+/* Center the loader */
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+	from {
+		bottom: -100px;
+		opacity: 0
+	}
+
+	to {
+		bottom: 0px;
+		opacity: 1
+	}
+}
+
+@keyframes animatebottom {
+	from {
+		bottom: -100px;
+		opacity: 0
+	}
+
+	to {
+		bottom: 0;
+		opacity: 1
+	}
+}
+
+#myDiv {
+	display: none;
+	text-align: center;
+}
+#myInput {
+	width: 130px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-image: url('/Imagenes/search.gif');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+#myInput:focus {
+		width: 100%;
+	}
+ /*Inicio de estilos para el Update Progress*/
+.overlay  
+        {
+    	    position: fixed;
+    	    z-index: 98;
+    	    top: 0px;
+    	    left: 0px;
+    	    right: 0px;
+    	    bottom: 0px;
+            background-color: #aaa; 
+            filter: alpha(opacity=80); 
+            opacity: 0.8; 
+        }
+        .overlayContent
+        {
+    	    z-index: 99;
+    	    margin: 250px auto;
+    	    width: 80px;
+    	    height: 80px;
+        }
+        .overlayContent h2
+        {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+        .overlayContent img
+        {
+    	    width: 80px;
+    	    height: 80px;
+        }

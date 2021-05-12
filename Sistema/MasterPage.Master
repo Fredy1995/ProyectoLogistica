@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Sistema.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Logística y Finanzas</title>
+    <link rel="stylesheet" type="text/css" href="boostrap/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Login.css"/>
+    <link rel="stylesheet" href="css/Iconos/demo.css"/>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/Script.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Responsive.css"/>
+    <link  rel="stylesheet" type="text/css" href="css/Estilos.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <form id="form1" runat="server" style="display:none;" class="animate-bottom">
+        <asp:ScriptManager ID="SscriptManager1" runat="server"></asp:ScriptManager>
+       
+        <nav style="height:150px">
+           <asp:ContentPlaceHolder ID="Index" runat="server">
+      
+            </asp:ContentPlaceHolder>
+        </nav>
+        <section style="height:100px">
+            <asp:ContentPlaceHolder ID="Login" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+       <footer >
+       </footer>
+          
+    </form>
+    <script  type="text/javascript">
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("form1").style.display = "block";
+        }
+
+    </script>
+</body>
+</html>
